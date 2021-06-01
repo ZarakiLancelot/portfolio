@@ -68,6 +68,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 section::before {
@@ -78,8 +79,6 @@ section::before {
     height: 100px;
     background: linear-gradient(to top, #1C0522, transparent);
     z-index: 1000;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 section img {
@@ -89,6 +88,7 @@ section img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    pointer-events: none;
 }
 
 section img#moon {
@@ -105,6 +105,18 @@ section img#mountains_front {
     color: #FFF;
     white-space: nowrap;
     font-size: 7.5vw;
+    z-index: 9;
+    transform: translateY(100px);
+}
+
+#btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #FFF;
+    color: #2B1055;
+    font-size: 1.5em;
     z-index: 9;
     transform: translateY(100px);
 }
